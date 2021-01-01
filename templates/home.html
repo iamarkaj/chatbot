@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="POST">
+        <h1 style="color: #B4254F;text-align:center;"><u>Chat Bot</u></h1>
+        <p style="color: #000;text-align:center;"><a href='https://github.com/iamarkaj'>👉🏻Github👈🏻</a></p>
+        <br/>
+        <h3 style="color: #000;">Enter👇</h3>
+        <textarea name="message" rows="6" cols="50"></textarea>
+        <br/>
+        <button type="submit" class="btn btn-primary btn-block btn-large" value="predict">Enter</button>
+    </form>
+    {%if result %}
+    <p><b>BOT:  </b>{{result[0]}}</p>
+    {% endif %}
+</body>
+</html>
