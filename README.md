@@ -47,5 +47,5 @@ python app.py
  conda deactivate
  conda remove --name chatbot --all
  ```
-
+> cache: C:/Users/user_name/.cache/huggingface/transformers/
 
